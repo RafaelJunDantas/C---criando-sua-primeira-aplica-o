@@ -17,7 +17,27 @@ void PrintMenu()
     Console.Write("Digite uma opção: ");
     int opcao = int.Parse(Console.ReadLine()!);
 
-    Console.WriteLine("Opção digitada: " + opcao);
+    switch(opcao)
+    {
+        case 1: 
+            Console.WriteLine("Opcao 1");
+            break;
+        case 2: 
+            Console.WriteLine("Opcao 2");
+            break;
+        case 3: 
+            Console.WriteLine("Opcao 3");
+            break;
+        case 4: 
+            Console.WriteLine("Opcao 4");
+            break;
+        case -1:
+            Console.WriteLine("Encerrando programa");
+            break;
+        default:
+            Console.WriteLine("Opcao invalida");
+            break;
+    }
 }
 
 PrintMensagem();
